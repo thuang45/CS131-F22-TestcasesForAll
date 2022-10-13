@@ -6,11 +6,16 @@ This repository contains:
 
 - the **full source code** for the autograder we deploy to Gradescope
 - 20% of the test cases we evaluate your code on; these are the test cases that are public on Gradescope
+    - `testsv1` contains expected, source, and (std)input files for files that should interpret and run without errors
+    - `failsv1` contains expected, source, and (std)input files for files that should interpret successfully, but error
 
 This repository does not contain:
 
 - 80% of the test cases we evaluate your code on
 - the plagiarism checker, which is closed-source
+- the Docker configuration for the deployment; this is managed by Gradescope
+
+We'll note that with the current setup, we grant **five seconds for each test case to run**.
 
 We've made a [separate repository for project template code](https://github.com/UCLA-CS-131/fall-22-proj-starter).
 
@@ -73,6 +78,10 @@ Coming soon :)
 ### Changing Core Infrastructure
 
 Coming soon :)
+
+## Bug Bounty
+
+If you're a student and you've found a bug - please let the TAs know (confidentially)! If you're able to provide a minimum-reproducible example, we'll buy you a coffee (at the very least)!
 
 ## Licensing and Attribution
 
