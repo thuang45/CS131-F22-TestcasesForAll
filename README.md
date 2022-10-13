@@ -2,6 +2,8 @@
 
 Hi there! This is a repo that contains an open-source subset of the autograder we'll be using for [CS 131 - Fall 2022](https://ucla-cs-131.github.io/fall-22/)'s course-long project: making an interpreter.
 
+Using this repository / testing locally is **entirely optional**. It does not directly affect your grade. **You are free to only submit to Gradescope!**
+
 This repository contains:
 
 - the **full source code** for the autograder we deploy to Gradescope
