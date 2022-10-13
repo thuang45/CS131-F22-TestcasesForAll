@@ -6,8 +6,8 @@ This repository contains:
 
 - the **full source code** for the autograder we deploy to Gradescope
 - 20% of the test cases we evaluate your code on; these are the test cases that are public on Gradescope
-    - `testsv1` contains expected, source, and (std)input files for files that should interpret and run without errors
-    - `failsv1` contains expected, source, and (std)input files for files that should interpret successfully, but error
+    - `testsv1` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret and run without errors
+    - `failsv1` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret successfully, but error
 
 This repository does not contain:
 
@@ -41,13 +41,28 @@ Place this in the same directory as `tester.py`. Then, to test project 1,
 
 ```sh
 $ python3 tester.py 1
+Running 10 tests...
+Running testsv1/test1.src...  PASSED
+Running testsv1/test2.src...  PASSED
+Running testsv1/test6.src...  PASSED
+Running testsv1/test8.src...  PASSED
+Running testsv1/test10.src...  PASSED
+Running testsv1/test27.src...  PASSED
+Running testsv1/test28.src...  PASSED
+Running failsv1/test1.src...  PASSED
+Running failsv1/test9.src...  PASSED
+Running failsv1/test7.src...  PASSED
+10/10 tests passed.
+Total Score:    100.00%
 ```
 
 Similarly, one can test versions 2 and 3 with
 
 ```sh
 $ python3 tester.py 2
+...
 $ python3 tester.py 3
+...
 ```
 
 The output of this command is **identical to what is visible on Gradescope pre-due date**, and they are the same cases that display on every submission. If there is a discrepancy, please let the teaching team know!
@@ -81,7 +96,7 @@ Coming soon :)
 
 ## Bug Bounty
 
-If you're a student and you've found a bug - please let the TAs know (confidentially)! If you're able to provide a minimum-reproducible example, we'll buy you a coffee (at the very least)!
+If you're a student and you've found a bug - please let the TAs know (confidentially)! If you're able to provide a minimum-reproducible example, we'll buy you a coffee - if not more!
 
 ## Licensing and Attribution
 

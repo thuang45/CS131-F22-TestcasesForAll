@@ -80,7 +80,7 @@ class TestScaffold(AbstractTestScaffold):
     return int(passed)
 
 # Utils to generate test structure
-def generate_test_case_structure(num_cases, dir, category='', expect_failure=False, visible={}):
+def generate_test_case_structure(cases, dir, category='', expect_failure=False, visible={}):
   fprefix = f'{dir}test'
   return [{
     'name': f'{category} | Test #{i}',
@@ -89,21 +89,23 @@ def generate_test_case_structure(num_cases, dir, category='', expect_failure=Fal
     'solfile': f'{fprefix}{i}.exp',
     'expect_failure': expect_failure,
     'visible': f'test{i}' in visible,
-  } for i in range(1,num_cases + 1)]
+  } for i in cases]
 
 def generate_test_suite(version):
+  successes = {1,2,6,8,10,27,28}
+  fails = {1,7,9}
   return generate_test_case_structure(
-    30,
+    successes,
     f'testsv{version}/',
     'Correctness',
     False,
-    {'test1'}
+    successes
   ) + generate_test_case_structure(
-    20,
+    fails,
     f'failsv{version}/',
     'Incorrectness',
     True,
-    {'test1'}
+    fails
   )
 
 # main entrypoint - just calls functions :)

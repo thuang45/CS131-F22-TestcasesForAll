@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# macOS (shakes fist)
+.DS_Store
+
+# grader-specific files
+interpreter*
+results.json
