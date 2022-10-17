@@ -34,6 +34,6 @@ func main
     funccall isEven
     assign n 0
     funccall isEven
-    assign n 129048
+    assign n 548
     funccall isEven
 endfunc
