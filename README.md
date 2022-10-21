@@ -71,7 +71,7 @@ The output of this command is **identical to what is visible on Gradescope pre-d
 
 Note: we also output the results of the terminal output to `results.json`.
 
-### Deploying on Gradescope
+### Deploying on Gradescope (as an instructor)
 
 *Note: as an instructor, you'll want to add more test cases!*
 
