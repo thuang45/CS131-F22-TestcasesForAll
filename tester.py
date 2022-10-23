@@ -95,7 +95,7 @@ def generate_test_suite(version):
   successes = {1,2,6,8,10,27,28}
   fails = {1,7,9}
   campuswire_tests = {1,2}
-  youngs_tests = {1,2,3,4}
+  youngs_tests = {1,2,3,4,5,6,7,8}
   qingyangs_tests = {1,2,3,4,5}
   return generate_test_case_structure(
     successes,
