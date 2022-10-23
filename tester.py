@@ -96,6 +96,7 @@ def generate_test_suite(version):
   fails = {1,7,9}
   campuswire_tests = {1,2}
   youngs_tests = {1,2,3,4}
+  qingyangs_tests = {1,2,3,4,5}
   return generate_test_case_structure(
     successes,
     f'testsv{version}/',
@@ -120,6 +121,12 @@ def generate_test_suite(version):
     'Correctness',
     False,
     youngs_tests
+  ) + generate_test_case_structure(
+    qingyangs_tests,
+    f'qingyangs_testsv{version}/',
+    'Correctness',
+    False,
+    qingyangs_tests
   )
 
 # main entrypoint - just calls functions :)
