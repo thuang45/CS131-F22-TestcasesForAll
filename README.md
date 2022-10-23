@@ -1,4 +1,4 @@
-# CS 131 Fall 2022 - Brewin Project Testcase Crowd-Sourcing
+# CS 131 - Brewin Project Testcase Crowd-Sourcing
 
 Hello! This is a fork from the official CS 131 autograder repository, with some additional testcases. Feel free to just use it -- but I ***strongly*** encourage that you create a pull request and provide your own testcases to the repository. 
 
