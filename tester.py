@@ -95,7 +95,8 @@ def generate_test_suite(version):
   successes = {1,2,6,8,10,27,28}
   fails = {1,7,9}
   campuswire_tests = {1,2}
-  youngs_tests = {1,2,3,4,5,6,7,8}
+  youngs_tests = {1,2,3,4,5,6,7,8,9}
+  youngs_fails = {11,12,13,14,15}
   qingyangs_tests = {1,2,3,4,5}
   yiyang_tests = {1,2,3,4}
   yiyang_failures = {5,6,7,8}
@@ -126,6 +127,12 @@ def generate_test_suite(version):
     False,
     youngs_tests
   ) + generate_test_case_structure(
+    youngs_fails,
+    f'youngs_failsv{version}/',
+    'Incorrectness',
+    True,
+    youngs_fails
+  ) + generate_test_case_structure(
     qingyangs_tests,
     f'qingyangs_testsv{version}/',
     'Correctness',
@@ -139,7 +146,7 @@ def generate_test_suite(version):
     yiyang_tests
   ) + generate_test_case_structure(
     yiyang_failures,
-    f'yiyang_testsv{version}/',
+    f'yiyang_failsv{version}/',
     'Incorrectness',
     True,
     yiyang_failures
