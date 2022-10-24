@@ -93,11 +93,12 @@ def generate_test_case_structure(cases, dir, category='', expect_failure=False, 
 
 def generate_test_suite(version):
   successes = {1,2,6,8,10,27,28}
-  fails = {1,2,3,7,9}
+  fails = {1,7,9}
   campuswire_tests = {1,2}
   youngs_tests = {1,2,3,4,5,6,7,8}
   qingyangs_tests = {1,2,3,4,5}
   tina_evan_tests = {1,4,5,100,101,102,103,104,105}
+  tina_evan_fails = {2,3}
   return generate_test_case_structure(
     successes,
     f'testsv{version}/',
@@ -134,6 +135,12 @@ def generate_test_suite(version):
     'Correctness',
     False,
     tina_evan_tests
+  ) + generate_test_case_structure(
+    tina_evan_fails,
+     f'tina_evan_failsv{version}/',
+    'Incorrectness',
+    True,
+    tina_evan_fails
   )
 
 # main entrypoint - just calls functions :)
