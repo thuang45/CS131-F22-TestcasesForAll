@@ -1,4 +1,4 @@
-from intbase import InterpreterBase, ErrorType
+from intbase import InterpreterBase
 
 # FuncInfo is a class that represents information about a function
 # Right now, the only thing this tracks is the line number of the first executable instruction

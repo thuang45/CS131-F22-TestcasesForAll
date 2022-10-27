@@ -43,4 +43,3 @@ class Tokenizer:
     # no more quotes found, tokenize remaining string
     tokens += s[search_from:].split()
     return tokens
-
