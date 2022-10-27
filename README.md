@@ -8,8 +8,8 @@ This repository contains:
 
 - the **full source code** for the autograder we deploy to Gradescope
 - 20% of the test cases we evaluate your code on; these are the test cases that are public on Gradescope
-    - `testsv1` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret and run without errors
-    - `failsv1` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret successfully, but error
+    - `testsv*` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret and run without errors
+    - `failsv*` contains source (`.src`), expected (`.exp`), and standard input (`.in`) files for programs that should interpret successfully, but error
 - canonical solutions for the past projects:
   - Carey's solution for Project 1: `interpreterv1.py`, `env_v1.py`, `func_v1.py`, and `tokenize.py`. More on this in the [project template repo](https://github.com/UCLA-CS-131/fall-22-proj-starter).
 
