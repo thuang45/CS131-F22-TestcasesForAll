@@ -134,3 +134,9 @@ dmypy.json
 # grader-specific files
 interpreter*
 results.json
+
+# all python, except test scripts
+*.py
+!harness.py
+!intbase.py
+!tester.py
