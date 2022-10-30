@@ -1,4 +1,4 @@
-func main
+func main void
   var string v1 v2
   assign v1 "hello "
   assign v2 + v1 "world!"
