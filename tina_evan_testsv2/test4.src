@@ -1,5 +1,5 @@
 # try while loops
-func main
+func main void
     var int a
     assign a 5
     while > a 0
