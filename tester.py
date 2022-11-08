@@ -161,6 +161,8 @@ def generate_test_suite_v2(version):
   fails = {3, 4, 8, 9, 10, 20, 21, 23, 24, 27}
   tina_evan_tests = {1,2,3,4,5,6,7,8}
   tina_evan_fails = {1,2,3,4}
+  youngs_tests = {1,2,3,4}
+  youngs_fails = {1,2,3,4}
   return generate_test_case_structure(
     successes,
     f'testsv{version}/',
@@ -179,6 +181,16 @@ def generate_test_suite_v2(version):
   ) + generate_test_case_structure(
     tina_evan_fails,
     f'tina_evan_failsv{version}/',
+    'Incorrectness',
+    True,
+  ) + generate_test_case_structure(
+    youngs_tests,
+    f'youngs_testsv{version}/',
+    'Correctness',
+    False,
+  ) + generate_test_case_structure(
+    youngs_fails,
+    f'youngs_failsv{version}/',
     'Incorrectness',
     True,
   )
