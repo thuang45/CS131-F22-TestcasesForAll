@@ -1,0 +1,22 @@
+# Test case from campuswire post 559
+func main void
+  var int a b
+  assign a 1
+  assign b 2
+  if True
+    funccall foo a
+    funccall print resulti
+  endif
+  funccall print a
+endfunc
+
+func foo b:refint int
+  funccall print b
+  assign b 35
+  funccall foo2 b
+endfunc
+
+func foo2 c:refint void
+  funccall print c
+  assign c 69
+endfunc

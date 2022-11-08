@@ -1,0 +1,7 @@
+func main void
+   # stuff
+   if True
+       funccall input "Enter a number: "
+   endif
+   funccall print results
+endfunc

@@ -1,0 +1,11 @@
+func foo x:refint int
+   assign x 10
+   return 20
+endfunc
+
+func main void
+    var int resulti
+    assign resulti 5
+    funccall foo resulti
+    funccall print resulti # 10 or 20???
+endfunc

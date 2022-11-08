@@ -1,0 +1,34 @@
+func main void
+    var int a
+    var bool b
+    assign a 999
+    funccall foo a b
+    funccall print a b
+    funccall absval a a
+    funccall print a resultb
+endfunc
+
+
+func foo bruh:refint boo:refbool int
+    if boo
+        assign bruh + bruh 1
+    else
+        assign bruh * - bruh 1 -1
+        funccall print bruh
+        assign boo == boo False
+        funccall absval bruh bruh
+        funccall print bruh
+    endif
+    return * bruh 2
+endfunc
+
+
+func absval val:int change_me:refint bool
+  if < val 0
+    assign change_me * -1 val
+    return True
+  else
+    assign change_me val
+    return False
+  endif
+endfunc
