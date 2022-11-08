@@ -1,0 +1,20 @@
+func foo int
+    return 1
+endfunc
+
+func bar void
+    funccall foobar
+    funccall print resulti # prints 2
+endfunc
+
+func foobar int
+    return 2
+endfunc
+
+func main void
+    if True
+        funccall foo 
+    endif
+    funccall bar  
+    funccall print resulti # prints 1
+endfunc

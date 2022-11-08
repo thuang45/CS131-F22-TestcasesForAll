@@ -1,0 +1,11 @@
+func main void
+
+    funccall input "enter your name"
+    if True
+        funccall input "enter mid name "
+        funccall print results
+    endif
+    funccall print results
+
+    
+endfunc
