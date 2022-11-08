@@ -1,0 +1,6 @@
+in main, a is 5: 5
+in foo, a should be 5: 5
+result of bar should be 0: 0
+after calling helper, a should be 8: 8
+result from foo should be 10: 10
+a should be changed to 8: 8

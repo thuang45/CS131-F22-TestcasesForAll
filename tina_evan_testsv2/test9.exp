@@ -1,0 +1,18 @@
+5
+foobar
+5
+outer
+inner
+00
+inner
+01
+outer
+inner
+10
+inner
+11
+noparam function: can do assignment in function
+5a string value
+new stringplaceholder
+5string not bounded
+new stringplaceholder

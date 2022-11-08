@@ -1,0 +1,107 @@
+func foo xyz:int pdq:refstring void
+  funccall print xyz pdq
+  var string str
+  assign pdq "new string"
+  assign xyz -1
+  funccall foo2 pdq "placeholder"
+endfunc
+
+func foo2 nonrefstring:string pdq2:refstring void
+  funccall print nonrefstring pdq2
+  assign pdq2 "new string in foo2"
+  assign nonrefstring "new nonrefstring in foo2"
+endfunc
+
+func noparam void
+  var string str
+  assign str "can do assignment in function"
+  funccall print "noparam function: " str
+endfunc
+
+func hasret arefint:refint int
+  return arefint
+endfunc
+
+func retint int
+  return
+endfunc
+
+func retstr string
+  var string str
+  assign str "a string to be returned"
+  return str
+endfunc
+
+func retbool bool
+endfunc #no return statement
+
+func foo3 void
+  return 5
+endfunc
+
+func main void
+  #assign notdeclared -1
+  var int a
+  #var int a
+  assign a 5
+  if > a 0
+    funccall print a
+    var string a
+    assign a "foobar"
+    funccall print a
+    var bool b
+  endif
+  funccall print a
+  #funccall print b
+  var int i
+  assign i 0
+  while < i 2
+    var int j
+    var string s
+    assign s "outer"
+    funccall print s
+    while < j 2
+      var string s
+      assign s "inner"
+      funccall print s
+      funccall print i j
+      assign j + j 1
+    endwhile
+    assign i + i 1
+  endwhile
+
+  var bool t
+  var bool f
+  assign t True
+  assign f False
+  if t
+    var int i
+    assign i 99
+  endif
+
+  if f
+    var int i
+    assign i 99
+  else
+    var int j
+    assign j 88
+  endif
+
+  var string str
+  assign str "a string value"
+  #assign str a
+  #assign str 999
+
+  funccall noparam
+  funccall foo a str
+  funccall foo a "string not bounded"
+
+  funccall hasret a
+  assign resulti -1
+  if True
+    funccall retstr
+  endif
+  funccall retint
+  funccall retbool
+  #funccall foo3
+endfunc

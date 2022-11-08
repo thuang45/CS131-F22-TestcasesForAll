@@ -1,0 +1,30 @@
+# testing type compatibility
+
+func main void
+  var int a
+  assign a 5
+  funccall print "in main, a is 5: " a
+  funccall foo a
+  funccall print "result from foo should be 10: " resulti
+  funccall print "a should be changed to 8: " a
+endfunc
+
+func foo a:refint int
+  funccall bar a
+  funccall print "in foo, a should be 5: " a
+  funccall print "result of bar should be 0: " resulti
+  
+  funccall helper a
+  funccall print "after calling helper, a should be 8: " a
+  return 10
+endfunc
+
+func bar a:int int
+  assign a 0
+  return a
+endfunc
+
+func helper a:refint string
+  assign a 8
+  return "hi"
+endfunc
