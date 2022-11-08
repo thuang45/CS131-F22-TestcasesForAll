@@ -163,7 +163,7 @@ def generate_test_suite_v2(version):
   tina_evan_fails = {1,2,3,4}
   youngs_tests = {1,2,3,4}
   youngs_fails = {1,2,3,4}
-  qianli_tests = {446, 461, 462, 465, 467, 492, 498, 559}
+  qianli_tests = {446, 461, 465, 467, 492, 498, 559}
   qianli_fails = {435, 436}
   return generate_test_case_structure(
     successes,
