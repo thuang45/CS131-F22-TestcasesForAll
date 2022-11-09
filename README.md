@@ -4,6 +4,7 @@ Hello! This is a fork from the official CS 131 autograder repository, with some 
 
 ## News & Updates
 
+- (11/8) Added testcases from Qianli. Note: testcase #462 is ambiguous and will not be tested (according to TA), so it has been removed. 
 - (11/7) Some V2 testcases were added by Tina and Evan! Yours truly also added some of their own. :D
 - (10/28) Now up to date with upstream repo, supporting V2 testing! Contribute your testcases now for... idk, good karma :)
 - (10/23) Thanks to the effort of Brandon, Qingyang, Tina, Evan, Yiyang (and myself maybe), we now have 50 testcases for V1! 
@@ -24,7 +25,8 @@ cd fall-22-autograder
 
 ### Running Brewin Scripts
 
-- To run the Brewin interpreter with a given file, simply run `./brewin.sh <FILE>`. 
+- To run the Brewin (V1) interpreter with a given file, use `./brewin.sh <FILE>`. 
+- To run the Brewin++ (V2) interpreter with a given file, use `./brewin++.sh <FILE>`. 
 
 ### Local Auto-testing
 

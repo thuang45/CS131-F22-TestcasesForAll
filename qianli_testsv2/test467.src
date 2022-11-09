@@ -1,0 +1,10 @@
+func foo int
+   if False
+      return 10
+   endif
+endfunc
+
+func main void
+    funccall foo
+    funccall print resulti
+endfunc

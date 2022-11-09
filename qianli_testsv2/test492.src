@@ -1,0 +1,13 @@
+func main void
+    var int a
+    while < a 10
+        var int b #is allowed
+        assign b + 1 b
+        if == a 11
+            #will never happen
+        else
+            assign a + a 1
+        endif
+    endwhile
+    funccall print a #NAMEERROR
+endfunc
