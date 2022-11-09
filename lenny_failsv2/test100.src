@@ -1,0 +1,11 @@
+func foo void
+  return
+endfunc
+
+func main void
+  var int a
+  assign a 420
+  if True
+    funccall foo a
+  endif
+endfunc

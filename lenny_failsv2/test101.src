@@ -1,0 +1,8 @@
+#strtoint, twice
+
+func main void
+    funccall strtoint "-007"
+    var int a
+    assign a resulti #result should be -7
+    funccall strtoint a
+endfunc

@@ -163,6 +163,8 @@ def generate_test_suite_v2(version):
   tina_evan_fails = {1,2,3,4}
   youngs_tests = {1,2,3,4}
   youngs_fails = {1,2,3,4}
+  lenny_tests = {2,3,6,7,8,10,11,12,13,16,22,47,50,53,55,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130}
+  lenny_fails = {3,4,8,9,10,20,21,23,24,27,100,101}
   return generate_test_case_structure(
     successes,
     f'testsv{version}/',
@@ -191,6 +193,16 @@ def generate_test_suite_v2(version):
   ) + generate_test_case_structure(
     youngs_fails,
     f'youngs_failsv{version}/',
+    'Incorrectness',
+    True,
+  ) + generate_test_case_structure(
+    lenny_tests,
+    f'lenny_testsv{version}/',
+    'Correctness',
+    False,
+  ) + generate_test_case_structure(
+    lenny_fails,
+    f'lenny_failsv{version}/',
     'Incorrectness',
     True,
   )

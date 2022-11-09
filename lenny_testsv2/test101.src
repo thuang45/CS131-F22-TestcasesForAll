@@ -1,0 +1,23 @@
+func main void
+  var int a
+  assign a 5
+  if > a 0
+    funccall print a    # this is valid; a is visible to inner block
+    assign a 6
+    if True
+      funccall print a
+      assign a 7
+      if False
+        assign a 8
+        funccall print a
+      else
+        funccall print a
+        assign a 9
+        funccall print a
+      endif
+      funccall print a
+    endif
+    funccall print a
+  endif
+  funccall print a
+endfunc  
